@@ -539,3 +539,8 @@ $(function() {
         music.stop();
     });
 })
+$(function () {
+    if ($('.movie_lightbox')) {
+        $('body').prepend($('.movie_lightbox').detach());
+    }
+});
