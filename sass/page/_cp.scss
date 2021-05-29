@@ -12,6 +12,9 @@
     a {
         color: $primaryColor;
         text-decoration: underline;
+        &:hover{
+            color:$color-red;
+        }
     }
     article {
         clear: both;
@@ -357,6 +360,7 @@
 .attachment li a:hover,
 .seeAlso li a:hover {
     text-decoration: underline;
+    color:$color-red;
 }
 .attachment .updated {
     margin: 0 0 0 40px;

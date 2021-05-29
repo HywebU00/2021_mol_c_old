@@ -415,15 +415,14 @@ $(function() {
 })
 //我要發問
 $(function() {
-     var question_btnStatus = false; // 假的判斷式，先設定沒有開啟
+    var question_btnStatus = false; // 假的判斷式，先設定沒有開啟
     $('.question .button').click(function() {
         $('.question .block').stop().slideToggle();
     })
     $('.question .del').click(function() {
         $('.question .block').stop().slideUp();
     })
-    
-    $('.question ul li:last a').focusout(function(){
+    $('.question ul li:last a').focusout(function() {
         $('.question .block').stop().slideUp();
     })
     if (question_btnStatus = true) {
@@ -551,8 +550,14 @@ $(function() {
         music.stop();
     });
 })
-$(function () {
+$(function() {
     if ($('.movie_lightbox')) {
         $('body').prepend($('.movie_lightbox').detach());
     }
+});
+$(function() {
+    $('.precaution_list .title>a').click(function() {
+        $(this).parents('.precaution_list').siblings('.precaution_list').find('.precaution_content').slideUp();
+        $(this).parent('.title').siblings('.precaution_content').stop().slideDown();
+    });
 });
