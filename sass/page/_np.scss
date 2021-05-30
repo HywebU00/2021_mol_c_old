@@ -68,7 +68,7 @@
     li {
         width: 31%;
         float: left;
-        margin: 0 1.167% 15px;
+        margin: 0 1.167% 20px;
         list-style-type: none;
         font-size: 1.125em;
         text-align: center;
@@ -91,13 +91,16 @@
             // text-overflow:ellipsis;
             // overflow:hidden;
             height: 210px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition: 0.5s;
             @media(max-width: 480px) {
                 white-space: normal;
             }
             img {
                 display: block;
-                width: 150px;
+                width: 160px;
                 margin: 0 auto 15px;
+                transition: 0.5s;
             }
             p {
                 overflow: hidden;
@@ -109,6 +112,11 @@
             }
             &:hover, &:focus {
                 border: 2px solid $primaryColor;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                font-size: 1.063em;
+                img{
+                    transform: scale(1.1);
+                }
             }
         }
     }

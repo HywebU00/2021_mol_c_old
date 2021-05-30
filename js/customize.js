@@ -558,6 +558,6 @@ $(function() {
 $(function() {
     $('.precaution_list .title>a').click(function() {
         $(this).parents('.precaution_list').siblings('.precaution_list').find('.precaution_content').slideUp();
-        $(this).parent('.title').siblings('.precaution_content').stop().slideDown();
+        $(this).parent('.title').siblings('.precaution_content').stop().slideToggle();
     });
 });
