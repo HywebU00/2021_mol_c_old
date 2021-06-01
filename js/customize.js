@@ -531,7 +531,7 @@ function rwdTable() {
 }
 //重要連結4
 $(function() {
-    $('.importantlink4 .image2').addClass('open');
+    $('.importantlink4 .image').addClass('open');
     $('.importantlink4 .title a').click(function() {
         $(this).parent().siblings('.image').toggleClass('open');
         $('.image2').removeClass('open');
