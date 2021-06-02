@@ -166,11 +166,13 @@
         min-height: auto;
         article {
             padding: 0 0 20px;
+            
             h3 {
                 color: $primaryColor;
                 position: relative;
                 padding: 0 0 0 15px;
                 margin: 0 0 30px;
+                
                 &:before {
                     content: '';
                     border: 8px solid $primaryColor;
@@ -188,6 +190,7 @@
                 letter-spacing: 0;
                 background-color: #fff;
                 padding: 0;
+                
                 @include screen('xs_mobile') {
                     width: 100%;
                 }
@@ -231,6 +234,7 @@
                     width: auto;
                     max-width: 400px;
                     color: #030;
+                    
                     @media (max-width: 480px) {
                         width: 96%;
                     }
@@ -239,9 +243,11 @@
             p {
                 line-height: 2em;
                 margin: 0 0 1em 0;
+                
             }
             ul {
                 margin: 0;
+               
                 li {
                     color: #333;
                     padding: 5px 0 2px 15px;
@@ -255,21 +261,21 @@
                             color: $color-red;
                         }
                     }
-                    ol{
-                       list-style-type: decimal !important; 
+                    ol {
+                        list-style-type: decimal !important;
                     }
                 }
             }
             ol {
                 margin: 20px 0 20px 20px;
                 list-style-type: decimal !important;
+                
                 li {
                     color: #333;
                     padding: 5px 0 2px 15px;
                     border-bottom: 1px solid #ccc;
-                    
-                    &:last-child{
-                        border:none;
+                    &:last-child {
+                        border: none;
                     }
                     // background-image: url('../images/link_icon01.png');
                     // background-repeat: no-repeat;
@@ -280,6 +286,14 @@
                             color: $color-red;
                         }
                     }
+                }
+            }
+            img {
+                max-width: 700px;
+                margin: 0 auto;
+                @include screen('mobile') {
+                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }
@@ -332,17 +346,6 @@
                         margin-left: 4px;
                         color: #444;
                     }
-                }
-            }
-        }
-        .pic {
-            text-align: center;
-            img {
-                max-width: 700px;
-                margin: 0 auto;
-                @include screen('mobile') {
-                    width: 100%;
-                    max-width: 100%;
                 }
             }
         }

@@ -98,6 +98,10 @@
         height: 260px;
         display: flex;
         align-items: stretch;
+        @include screen('mobile'){
+            position: absolute;
+            top: 0;
+        }
         .title {
             width: 50px;
             height: 100%;
