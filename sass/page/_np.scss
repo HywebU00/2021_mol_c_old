@@ -272,8 +272,8 @@
             }
             .image {
                
-                 width: 120px;
-                 margin:0 10px 0 0;
+                 width: 110px;
+                 margin:0 15px 0 0;
                 
                 img {
                     display: block;
@@ -306,18 +306,14 @@
                     // }
                 }
                 p {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    line-height: 1.5em;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
+                    // 
                     font-size: 0.813em;
+                    text-align: left;
                 }
             }
             &:hover, &:focus {
-                // border: 2px solid $primaryColor;
-                // box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                // outline: 2px solid $primaryColor;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
                 // font-size: 1.188em;
                 // img {
                 //     transform: scale(1.05);
