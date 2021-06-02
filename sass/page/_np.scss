@@ -253,7 +253,7 @@
             width: calc(48% - 2px);
             margin: 0 1% 15px;
         }
-        @media(max-width: 500px) {
+        @include screen('xs_mobile'){
             flex-basis: calc(96% - 2px);
             width: calc(96% - 2px);
             margin: 0 auto 15px;
@@ -275,7 +275,7 @@
                 width: 110px;
                 margin: 0 15px 0 0;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 img {
                     display: block;
                     width: 100%;
@@ -290,22 +290,19 @@
                 overflow: hidden;
                 padding: 0;
                 .title {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
+                    
                     line-height: 1.4em;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
+                    display: block;
                     margin-bottom: 10px;
                     text-align: left;
                     font-size: 1.25em;
                     font-weight: bolder;
                     padding-bottom: 5px;
                     border-bottom: 1px #ccc dashed;
-                    @media(max-width: 500px) {
-                        text-overflow: initial;
-                        display: block
-                    }
+                    // @media(max-width: 500px) {
+                    //     text-overflow: initial;
+                    //     display: block
+                    // }
                 }
                 p {
                     // 
