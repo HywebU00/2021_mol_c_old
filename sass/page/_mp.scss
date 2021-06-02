@@ -74,7 +74,7 @@
 //importantblock
 .importantblock {
     position: relative;
-    z-index: 99;
+    z-index: 999;
     height: 312px;
     @include screen('mobile') {
         height: 270px;
@@ -87,10 +87,12 @@
     }
     // importantlink4
     .importantlink4 {
-        position: absolute;
+        // position: absolute;
+        position: fixed;
         right: 0;
-        top: 0px;
+        top: 135px;
         transition: .4s;
+        z-index: 99;
         // width: 350px;
         background-color: rgba(0, 0, 0, .5);
         height: 260px;
@@ -156,7 +158,8 @@
         .image, .image2 {
             width: 300px;
             position: relative;
-            height: 250px;
+            height: 100%;
+            background-color:#13b5b1;
             display: none;
             transition: .5s;
             @media(max-width: 480px) {
@@ -170,7 +173,7 @@
                 left: 0;
                 bottom: 0;
                 img {
-                    width: 90%;
+                    width: 100%;
                     margin: auto;
                 }
                 &:focus,
