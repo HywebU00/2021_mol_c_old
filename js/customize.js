@@ -54,27 +54,35 @@ $(function() {
 $(function() {
     $('.group01').click(function() {
         $('body,html').stop(true, true).animate({ scrollTop: $('.block02').offset().top - 50 }, 1200, 'easeOutExpo');
+        $('.block02').find('.example-1').find('h2:first').find('a').focus(); //可以這樣加
     });
     $('.group02').click(function() {
         $('body,html').stop(true, true).animate({ scrollTop: $('.block03').offset().top - 50 }, 1200, 'easeOutExpo');
+        $('.block03').find('.slick-current').find('h3').find('a[tabindex="0"]').focus(); //可以這樣加
     });
     $('.group03').click(function() {
         $('body,html').stop(true, true).animate({ scrollTop: $('.block04').offset().top - 40 }, 1200, 'easeOutExpo');
+        $('.block04').find('.slick-current').find('a[tabindex="0"]').focus(); //可以這樣加
     });
     $('.group04').click(function() {
         $('body,html').stop(true, true).animate({ scrollTop: $('.block05').offset().top - 40 }, 1200, 'easeOutExpo');
+        $('.block05').find('a:first').focus(); //可以這樣加
     });
     $('.group05').click(function() {
         $('body,html').stop(true, true).animate({ scrollTop: $('.block06').offset().top - 40 }, 1200, 'easeOutExpo');
+        $('.block06').find('a:first').focus(); //可以這樣加
     });
     $('.group06').click(function() {
         $('body,html').stop(true, true).animate({ scrollTop: $('.block07').offset().top - 40 }, 1200, 'easeOutExpo');
+        $('.block07').find('a:first').focus(); //可以這樣加
     });
     $('.group07').click(function() {
         $('body,html').stop(true, true).animate({ scrollTop: $('.block08').offset().top - 40 }, 1200, 'easeOutExpo');
+        $('.block08').find('a:first').focus(); //可以這樣加
     });
     $('.group08').click(function() {
         $('body,html').stop(true, true).animate({ scrollTop: $('.block09').offset().top - 40 }, 1200, 'easeOutExpo');
+        $('.block09').find('.slick-current').find('a[tabindex="0"]').focus(); //可以這樣加
     });
 })
 //Accordion
