@@ -108,13 +108,13 @@ $(function() {
     })
     $('.accordionblock.open ul').css('display', 'block');
     $('.accordionblock.open').children('.topic').addClass('turnicon');
-    ////無障礙調整
-    $('.accordionblock .topic').keypress(function(event) {
-        var code = event.keyCode || event.which;
-        if (code == 32 || code == 13) {
-            $(this).click();
-        }
-    });
+    // //無障礙調整
+    // $('.accordionblock .topic').keypress(function(event) {
+    //     var code = event.keyCode || event.which;
+    //     if (code == 32 || code == 13) {
+    //         $(this).click();
+    //     }
+    // });
     $('.accordionblock .topic').each(function(i, e) {
         if ($(this).hasClass('unaccordion')) {} else {
             if ($(this).hasClass('turnicon')) {
